@@ -1,8 +1,9 @@
 // use localStorage to store the authority info, which might be sent from server in actual project.
 export function getAuthority(str) {
-  // return localStorage.getItem('antd-pro-authority') || ['admin', 'user'];
+  // return localStorage.getItem('izi-global-authority') || ['admin', 'user'];
   const authorityString =
-    typeof str === 'undefined' ? localStorage.getItem('antd-pro-authority') : str;
+    typeof str === 'undefined' ? localStorage.getItem('izi-global-authority') : str;
+  // console.log("DiepDT - Let's check local for login status --->>> ", authorityString);
   // authorityString could be admin, "admin", ["admin"]
   let authority;
   try {
@@ -13,10 +14,14 @@ export function getAuthority(str) {
   if (typeof authority === 'string') {
     return [authority];
   }
+  if (authority === null) {
+    return ['guest'];
+  }
+
   return authority || ['admin'];
 }
 
 export function setAuthority(authority) {
   const proAuthority = typeof authority === 'string' ? [authority] : authority;
-  return localStorage.setItem('antd-pro-authority', JSON.stringify(proAuthority));
+  return localStorage.setItem('izi-global-authority', JSON.stringify(proAuthority));
 }

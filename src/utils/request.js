@@ -23,6 +23,7 @@ const codeMessage = {
 };
 
 const checkStatus = response => {
+  // Return the response incase HTTP is ok
   if (response.status >= 200 && response.status < 300) {
     return response;
   }
@@ -83,6 +84,16 @@ export default function request(
     credentials: 'include',
   };
   const newOptions = { ...defaultOptions, ...options };
+  // Force to check for token saved in localStorage
+  // if (!localStorage.getItem('token')) {
+  //   // @HACK
+  //   /* eslint-disable no-underscore-dangle */
+  //   window.g_app._store.dispatch({
+  //     type: 'login/logout',
+  //   });
+  //   return;
+  // }
+
   if (
     newOptions.method === 'POST' ||
     newOptions.method === 'PUT' ||

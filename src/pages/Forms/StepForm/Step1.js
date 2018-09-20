@@ -43,7 +43,7 @@ class Step1 extends React.PureComponent {
               rules: [{ required: true, message: 'Vui lòng chọn tài khoản thanh toán' }],
             })(
               <Select placeholder="test@example.com">
-                <Option value="ant-design@alipay.com">ant-design@alipay.com</Option>
+                <Option value="diepdt@izi.asia">diepdt@izi.asia</Option>
               </Select>
             )}
           </Form.Item>
@@ -100,11 +100,15 @@ class Step1 extends React.PureComponent {
           <h3>Mô tả</h3>
           <h4>Chuyển vào tài khoản Ngân Lượng</h4>
           <p>
-            Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm.
+            Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới
+            đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới đây là một số mô tả
+            sự cố thường gặp về sản phẩm.
           </p>
           <h4>Chuyển qua thẻ ngân hàng</h4>
           <p>
-            Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm.
+            Nếu bạn cần, dưới đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới
+            đây là một số mô tả sự cố thường gặp về sản phẩm. Nếu bạn cần, dưới đây là một số mô tả
+            sự cố thường gặp về sản phẩm.
           </p>
         </div>
       </Fragment>

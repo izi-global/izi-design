@@ -69,9 +69,9 @@ const basicProgress = [
   {
     key: '5',
     time: '2017-10-01 12:00',
-    rate: '发起退货申请',
+    rate: 'Khởi tạo yêu cầu trả hàng',
     status: 'success',
-    operator: '用户',
+    operator: 'Người dùng',
     cost: '5mins',
   },
 ];
