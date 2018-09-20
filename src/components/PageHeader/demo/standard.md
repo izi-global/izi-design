@@ -46,7 +46,7 @@ const action = (
 const extra = (
   <Row>
     <Col sm={24} md={12}>
-      <div style={{ color: 'rgba(0, 0, 0, 0.43)' }}>状态</div>
+      <div style={{ color: 'rgba(0, 0, 0, 0.43)' }}>Trạng thái</div>
       <div style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 20 }}>待审批</div>
     </Col>
     <Col sm={24} md={12}>
@@ -68,10 +68,10 @@ const breadcrumbList = [{
 
 const tabList = [{
   key: 'detail',
-  tab: '详情',
+  tab: 'Chi tiết',
 }, {
   key: 'rule',
-  tab: '规则',
+  tab: 'Quy định',
 }];
 
 function onTabChange(key) {

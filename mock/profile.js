@@ -88,7 +88,7 @@ const advancedOperation1 = [
   {
     key: 'op2',
     type: '财务复审',
-    name: '付小小',
+    name: 'Daniel Đỗ',
     status: 'reject',
     updatedAt: '2017-10-03  19:23:12',
     memo: '不通过原因',
@@ -104,7 +104,7 @@ const advancedOperation1 = [
   {
     key: 'op4',
     type: '提交订单',
-    name: '林东东',
+    name: 'Trương Vô Kỵ',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
     memo: '很棒',

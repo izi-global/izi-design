@@ -42,7 +42,7 @@ const extra = (
         23421
       </Col>
       <Col xs={24} sm={12} md={12} lg={12} xl={6}>
-        <span style={{ color: 'rgba(0, 0, 0, 0.85)' }}>负责人：</span>
+        <span style={{ color: 'rgba(0, 0, 0, 0.85)' }}>Người phụ trách：</span>
         Daniel Đỗ
       </Col>
       <Col xs={24} sm={24} md={24} lg={24} xl={12}>

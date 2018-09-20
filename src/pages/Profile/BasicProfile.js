@@ -14,28 +14,28 @@ const progressColumns = [
     key: 'time',
   },
   {
-    title: '当前进度',
+    title: 'Tiến trình hiện tại',
     dataIndex: 'rate',
     key: 'rate',
   },
   {
-    title: '状态',
+    title: 'Trạng thái',
     dataIndex: 'status',
     key: 'status',
     render: text =>
       text === 'success' ? (
-        <Badge status="success" text="成功" />
+        <Badge status="success" text="Thành công" />
       ) : (
-        <Badge status="processing" text="进行中" />
+        <Badge status="processing" text="Đang xử lý" />
       ),
   },
   {
-    title: '操作员ID',
+    title: 'Id vận hành',
     dataIndex: 'operator',
     key: 'operator',
   },
   {
-    title: '耗时',
+    title: 'Thời gian',
     dataIndex: 'cost',
     key: 'cost',
   },
@@ -65,7 +65,7 @@ class BasicProfile extends Component {
         amount += Number(item.amount);
       });
       goodsData = basicGoods.concat({
-        id: '总计',
+        id: 'Tổng cộng',
         num,
         amount,
       });
@@ -82,7 +82,7 @@ class BasicProfile extends Component {
     };
     const goodsColumns = [
       {
-        title: '商品编号',
+        title: 'Mã sản phẩm',
         dataIndex: 'id',
         key: 'id',
         render: (text, row, index) => {
@@ -90,7 +90,7 @@ class BasicProfile extends Component {
             return <a href="">{text}</a>;
           }
           return {
-            children: <span style={{ fontWeight: 600 }}>总计</span>,
+            children: <span style={{ fontWeight: 600 }}>Tổng cộng</span>,
             props: {
               colSpan: 4,
             },
@@ -98,26 +98,26 @@ class BasicProfile extends Component {
         },
       },
       {
-        title: '商品名称',
+        title: 'Tên sản phẩm',
         dataIndex: 'name',
         key: 'name',
         render: renderContent,
       },
       {
-        title: '商品条码',
+        title: 'Mã vạch',
         dataIndex: 'barcode',
         key: 'barcode',
         render: renderContent,
       },
       {
-        title: '单价',
+        title: 'Giá',
         dataIndex: 'price',
         key: 'price',
         align: 'right',
         render: renderContent,
       },
       {
-        title: '数量（件）',
+        title: 'Số lượng (cái)',
         dataIndex: 'num',
         key: 'num',
         align: 'right',
@@ -129,7 +129,7 @@ class BasicProfile extends Component {
         },
       },
       {
-        title: '金额',
+        title: 'Tổng giá',
         dataIndex: 'amount',
         key: 'amount',
         align: 'right',
@@ -142,24 +142,24 @@ class BasicProfile extends Component {
       },
     ];
     return (
-      <PageHeaderWrapper title="基础详情页">
+      <PageHeaderWrapper title="Trang thông tin cơ bản">
         <Card bordered={false}>
-          <DescriptionList size="large" title="退款申请" style={{ marginBottom: 32 }}>
-            <Description term="取货单号">1000000000</Description>
-            <Description term="状态">已取货</Description>
-            <Description term="销售单号">1234123421</Description>
-            <Description term="子订单">3214321432</Description>
+          <DescriptionList size="large" title="Ứng dụng hoàn tiền" style={{ marginBottom: 32 }}>
+            <Description term="Mã lấy hàng">1000000000</Description>
+            <Description term="Trạng thái">Đã lấy hàng</Description>
+            <Description term="Mã đơn hàng">1234123421</Description>
+            <Description term="Đơn hàng con">3214321432</Description>
           </DescriptionList>
           <Divider style={{ marginBottom: 32 }} />
-          <DescriptionList size="large" title="用户信息" style={{ marginBottom: 32 }}>
-            <Description term="用户姓名">付小小</Description>
-            <Description term="联系电话">18100000000</Description>
-            <Description term="常用快递">菜鸟仓储</Description>
-            <Description term="取货地址">浙江省杭州市西湖区万塘路18号</Description>
-            <Description term="备注">无</Description>
+          <DescriptionList size="large" title="Thông tin người dùng" style={{ marginBottom: 32 }}>
+            <Description term="Tên đăng nhập">Daniel Đỗ</Description>
+            <Description term="Điện thoại liên hệ">18100000000</Description>
+            <Description term="Vận chuyển thường">Kho lưu trữ</Description>
+            <Description term="Địa chỉ nhận">Số nhà, đường phố, phường, quận, huyện</Description>
+            <Description term="Ghi chú">Không có</Description>
           </DescriptionList>
           <Divider style={{ marginBottom: 32 }} />
-          <div className={styles.title}>退货商品</div>
+          <div className={styles.title}>Hoàn hàng</div>
           <Table
             style={{ marginBottom: 24 }}
             pagination={false}
@@ -168,7 +168,7 @@ class BasicProfile extends Component {
             columns={goodsColumns}
             rowKey="id"
           />
-          <div className={styles.title}>退货进度</div>
+          <div className={styles.title}>Tiến trình hoàn hàng</div>
           <Table
             style={{ marginBottom: 16 }}
             pagination={false}

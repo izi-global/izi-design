@@ -9,7 +9,7 @@ const routerData = {
     name: '用户列表',
   },
   '/userinfo/:id': {
-    name: '用户信息',
+    name: 'Thông tin người dùng',
   },
   '/userinfo/:id/addr': {
     name: '收货订单',
@@ -20,7 +20,7 @@ describe('test getBreadcrumb', () => {
     expect(getBreadcrumb(routerData, '/dashboard/analysis').name).toEqual('分析页');
   });
   it('Parameters url', () => {
-    expect(getBreadcrumb(routerData, '/userinfo/2144').name).toEqual('用户信息');
+    expect(getBreadcrumb(routerData, '/userinfo/2144').name).toEqual('Thông tin người dùng');
   });
   it('The middle parameter url', () => {
     expect(getBreadcrumb(routerData, '/userinfo/2144/addr').name).toEqual('收货订单');
@@ -29,7 +29,7 @@ describe('test getBreadcrumb', () => {
     const urlNameList = urlToList('/userinfo/2144/addr').map(
       url => getBreadcrumb(routerData, url).name
     );
-    expect(urlNameList).toEqual(['用户列表', '用户信息', '收货订单']);
+    expect(urlNameList).toEqual(['用户列表', 'Thông tin người dùng', '收货订单']);
   });
 
   it('a path', () => {
@@ -38,6 +38,6 @@ describe('test getBreadcrumb', () => {
   });
   it('Secondary path', () => {
     const urlNameList = urlToList('/userinfo/2144').map(url => getBreadcrumb(routerData, url).name);
-    expect(urlNameList).toEqual(['用户列表', '用户信息']);
+    expect(urlNameList).toEqual(['用户列表', 'Thông tin người dùng']);
   });
 });

@@ -140,7 +140,7 @@ export default {
     '提交结果页用于反馈一系列操作任务的处理结果， 如果仅是简单操作，使用 Message 全局提示反馈即可。 本文字区域可以展示简单的补充说明，如果有类似展示 “单据”的需求，下面这个灰色区域可以呈现比较复杂的内容。',
   'app.result.success.operate-title': '项目名称',
   'app.result.success.operate-id': '项目 ID：',
-  'app.result.success.principal': '负责人：',
+  'app.result.success.principal': 'Người phụ trách：',
   'app.result.success.operate-time': '生效时间：',
   'app.result.success.step1-title': '创建项目',
   'app.result.success.step1-operator': 'Daniel Đỗ',
