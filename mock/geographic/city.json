@@ -1,0 +1,21 @@
+{
+  "1": [
+    {
+      "province": "Hà Nội",
+      "name": "Quận Ba Đình",
+      "id": "3"
+    }
+  ],
+  "2": [
+    {
+      "province": "Hải Dương",
+      "name": "Huyện Gia Lộc",
+      "id": "4"
+    },
+    {
+      "province": "Hải Dương",
+      "name": "Huyện Kinh Môn",
+      "id": "5"
+    }
+  ]
+}
